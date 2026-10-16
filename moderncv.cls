@@ -113,7 +113,7 @@
     pdfcreator    = {\LaTeX{} with 'moderncv' package},
 %    pdfproducer   = {\LaTeX{}},% will/should be set automatically to the correct TeX engine used
     bookmarksopen = true,
-    bookmarksdepth= 2,% to show sections and subsections
+    bookmarksdepth= 3,% to show sections and subsections
     pdfauthor     = {\@firstname{}~\@lastname{}},
     pdftitle      =
     {\@firstname{}~\@lastname{}\expandafter\notblank\expandafter{\@title}{ -- \@title}{}},  %\notblank does not expand argument automatically

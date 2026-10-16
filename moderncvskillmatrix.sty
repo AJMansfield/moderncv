@@ -997,6 +997,8 @@
         \begingroup
             \renewcommand{\arraystretch}{1.25}
             \arrayrulecolor{bodyrulecolor}
+            \invisiblesubsection{#3}
+            \invisiblesubsubsection{#5}
             \begin{tabular}{@{}p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}%
                     p{\cvskill@width}@{\hspace{\skillmatrix@padding}}%
                     p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}}%
@@ -1008,6 +1010,7 @@
         \endgroup
         \par\addvspace{#2}
     }{% If no star is seen no line is drawn
+        \invisiblesubsubsection{#5}
         \begin{tabular}{@{}p{\skillmatrix@hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}%
                 p{\cvskill@width}@{\hspace{\skillmatrix@padding}}%
                 p{\cvskill@descriptorwidth}@{\hspace{\skillmatrix@padding}}%
@@ -1031,6 +1034,7 @@
         \RenewDocumentCommand{\@starIndependentMatrixEntry}{}{%
             \begingroup%
                 \renewcommand{\arraystretch}{1.25}%
+                \invisiblesubsubsection{#5}
                 \begin{tabular}[t]{@{}p{\hintscolumnwidth}%
                                 @{\hspace{\separatorcolumnwidth}}|@{\hspace{\separatorcolumnwidth}}p{\skillmatrix@hintscolumnwidth}
                                 @{\hspace{\skillmatrix@padding}}%
