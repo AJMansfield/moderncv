@@ -131,8 +131,8 @@
     {}%
     {\listitemsymbol\hspace{\listitemsymbolspace}\begin{minipage}[t]{\listdoubleitemcolumnwidth-\listitemsymbolspace}#3\end{minipage}}}}
 
-\renewcommand*{\cventry}[7][.25em]{%
-  \cvitem[#1]{\tl@milestone{#2}}{%
+\renewcommand*{\cventry}[7][0.75em]{%
+  \cvitem[#1]{\raisebox{0.7ex}{\tl@milestone{#2}}}{%
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
